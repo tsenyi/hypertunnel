@@ -34,6 +34,7 @@ This free TCP relay/reverse proxy service can be used to **expose any TCP/IP ser
     -s, --server [server]        hypertunnel server to use (default: https://hypertunnel.ga)
     -t, --token [token]          token required by the server (default: free-server-please-be-nice)
     -i, --internet-port [port]   the desired internet port on the public server
+    -r, --relay-port [port]      the desired relay port on the public server
     --ssl                        enable SSL termination (https://) on the public server    
     -h, --help                   output usage information
 ```

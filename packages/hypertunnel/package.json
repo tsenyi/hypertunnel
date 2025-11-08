@@ -16,7 +16,9 @@
   "engines": {
     "node": ">=8"
   },
-  "bin": "./cli.js",
+  "bin": {
+    "hypertunnel": "./cli.js"
+  },
   "keywords": [
     "hypertunnel",
     "localtunnel",

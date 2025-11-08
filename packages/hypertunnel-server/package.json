@@ -13,9 +13,7 @@
   "engines": {
     "node": ">=8"
   },
-  "bin": {
-    "hypertunnel-server": "./cli.js"
-  },
+  "bin": "./cli.js",
   "keywords": [
     "hypertunnel",
     "hypertunnel-server",

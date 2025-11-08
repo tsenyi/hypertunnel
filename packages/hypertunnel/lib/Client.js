@@ -17,6 +17,7 @@ class Client {
     this.serverParts = parseUrl(this.server)
     this.token = opts.token || 'free-server-please-be-nice'
     this.desiredInternetPort = opts.internetPort
+    this.desiredRelayPort = opts.relayPort
     this.options = options
 
     this.deleted = false
@@ -36,6 +37,7 @@ class Client {
     const payload = {
       serverToken: this.token,
       internetPort: this.desiredInternetPort,
+      relayPort: this.desiredRelayPort,
       ssl: this.options.ssl
     }
     debug('create payload', payload)

@@ -16,6 +16,7 @@ dist
 .env.production.local
 .cache
 .yarn*
+yarn.lock
 
 lerna-debug.log*
 lerna-error.log*

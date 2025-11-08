@@ -38,7 +38,8 @@ class RelayServer extends EventEmitter {
   createInternetListener () {
     return new this.InternetListener(
       { port: this.internetPort },
-      { internetListener: this.options.internetListener,
+      { ...this.options, 
+        internetListener: this.options.internetListener,
         hostname: this.options.hostname,
         bufferData: true,
         timeout: this.options.timeout || 20000 },
